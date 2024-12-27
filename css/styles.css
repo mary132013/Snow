@@ -18,36 +18,43 @@ body {
 }
 
 .branch {
+    position: relative;
     width: 0;
     height: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    position: relative; /* Для позиционирования иголок */
+    border-left: 60px solid transparent; /* Левый край */
+    border-right: 60px solid transparent; /* Правый край */
 }
 
-.layer1 {
-    border-bottom: 100px solid #228B22; /* Цвет ветки */
-}
-
-.layer2 {
-    border-bottom: 90px solid #2E8B57; /* Цвет ветки */
-}
-
-.layer3 {
-    border-bottom: 80px solid #3CB371; /* Цвет ветки */
-}
-
-.layer4 {
-    border-bottom: 70px solid #66CDAA; /* Цвет ветки */
-}
-
-.layer5 {
-    border-bottom: 60px solid #98FB98; /* Цвет ветки */
-}
-
-.layer6 {
-    border-bottom: 50px solid #66CDAA; /* Добавляем дополнительный слой */
-}
+.layer1 { border-bottom: 100px solid #228B22; }
+.layer2 { border-bottom: 90px solid #2E8B57; }
+.layer3 { border-bottom: 80px solid #3CB371; }
+.layer4 { border-bottom: 70px solid #66CDAA; }
+.layer5 { border-bottom: 60px solid #98FB98; }
+.layer6 { border-bottom: 50px solid #66CDAA; }
+.layer7 { border-bottom: 40px solid #3CB371; }
+.layer8 { border-bottom: 30px solid #2E8B57; }
+.layer9 { border-bottom: 20px solid #228B22; }
+.layer10 { border-bottom: 80px solid #3CB371; }
+.layer11 { border-bottom: 70px solid #66CDAA; }
+.layer12 { border-bottom: 60px solid #98FB98; }
+.layer13 { border-bottom: 50px solid #66CDAA; }
+.layer14 { border-bottom: 40px solid #3CB371; }
+.layer15 { border-bottom: 30px solid #2E8B57; }
+.layer16 { border-bottom: 20px solid #228B22; }
+.layer17 { border-bottom: 80px solid #3CB371; }
+.layer18 { border-bottom: 70px solid #66CDAA; }
+.layer19 { border-bottom: 60px solid #98FB98; }
+.layer20 { border-bottom: 50px solid #66CDAA; }
+.layer21 { border-bottom: 40px solid #3CB371; }
+.layer22 { border-bottom: 30px solid #2E8B57; }
+.layer23 { border-bottom: 20px solid #228B22; }
+.layer24 { border-bottom: 80px solid #3CB371; }
+.layer25 { border-bottom: 70px solid #66CDAA; }
+.layer26 { border-bottom: 60px solid #98FB98; }
+.layer27 { border-bottom: 50px solid #66CDAA; }
+.layer28 { border-bottom: 40px solid #3CB371; }
+.layer29 { border-bottom: 30px solid #2E8B57; }
+.layer30 { border-bottom: 20px solid #228B22; }
 
 .trunk {
     width: 30px;
@@ -92,29 +99,19 @@ body {
     transform: rotate(-72deg);
 }
 
-/* Стили для иголок */
-.needle {
+/* Стили для иголок на ветках */
+.branch::before,
+.branch::after {
+    content: '';
+    position: absolute;
     width: 5px; /* Ширина иголки */
     height: 15px; /* Высота иголки */
     background-color: #006400; /* Цвет иголки */
-    position: absolute; /* Абсолютное позиционирование для иголок */
 }
 
-.layer1 .needle:nth-child(1) { left: -20px; top: 30px; }
-.layer1 .needle:nth-child(2) { left: 0; top: 30px; }
-.layer1 .needle:nth-child(3) { left: 20px; top: 30px; }
-
-.layer2 .needle:nth-child(1) { left: -25px; top: 20px; }
-.layer2 .needle:nth-child(2) { left: -5px; top: 20px; }
-.layer2 .needle:nth-child(3) { left: 15px; top: 20px; }
-.layer2 .needle:nth-child(4) { left: -15px; top: 20px; }
-
-.layer3 .needle:nth-child(1) { left: -10px; top: 15px; }
-.layer3 .needle:nth-child(2) { left: 10px; top: 15px; }
-
-.layer4 .needle:nth-child(1) { left: -15px; top: 10px; }
-.layer4 .needle:nth-child(2) { left: 5px; top: 10px; }
-.layer4 .needle:nth-child(3) { left: -5px; top: 10px; }
-
-.layer5 .needle:nth-child(1) { left: -5px; top: 5px; }
-
+.branch::before {
+    left: -30px; /* Позиция иголки слева */
+}
+.branch::after {
+    right: -30px; /* Позиция иголки справа */
+}
