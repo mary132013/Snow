@@ -1,5 +1,4 @@
 function delayLoad() {
-    document.body.style.backgroundImage = "url('images/photo_2024-12-25_02-37-20.jpg')";
     let countdown = 10; // Начальное значение для обратного отсчета
     const textElement = document.getElementById('text');
     const countdownInterval = setInterval(() => {
