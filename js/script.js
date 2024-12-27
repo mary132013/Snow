@@ -1,15 +1,4 @@
 function delayLoad() {
-    let countdown = 10; // Начальное значение для обратного отсчета
-    const textElement = document.getElementById('text');
-    const countdownInterval = setInterval(() => {
-        countdown--;
-        if (countdown < 0) {
-            clearInterval(countdownInterval);
-            startMessage();  
-        }
-    }, 1000); 
-    document.querySelector('.loader').style.display = 'block';
-
     // Запускаем создание снежинок через каждые 500 мс
     setInterval(createSnowflakes, 500); // Создавать снежинки каждые 500 мс
 }
