@@ -25,23 +25,27 @@ body {
 }
 
 .layer1 {
-    border-bottom: 80px solid #228B22; /* Цвет ветки */
+    border-bottom: 100px solid #228B22; /* Цвет ветки */
 }
 
 .layer2 {
-    border-bottom: 70px solid #2E8B57; /* Цвет ветки */
+    border-bottom: 90px solid #2E8B57; /* Цвет ветки */
 }
 
 .layer3 {
-    border-bottom: 60px solid #3CB371; /* Цвет ветки */
+    border-bottom: 80px solid #3CB371; /* Цвет ветки */
 }
 
 .layer4 {
-    border-bottom: 50px solid #66CDAA; /* Цвет ветки */
+    border-bottom: 70px solid #66CDAA; /* Цвет ветки */
 }
 
 .layer5 {
-    border-bottom: 40px solid #98FB98; /* Цвет ветки */
+    border-bottom: 60px solid #98FB98; /* Цвет ветки */
+}
+
+.layer6 {
+    border-bottom: 50px solid #66CDAA; /* Добавляем дополнительный слой */
 }
 
 .trunk {
@@ -49,4 +53,40 @@ body {
     height: 50px;
     background-color: #8B4513; /* Цвет ствола */
     margin: 0 auto; /* Центрируем ствол */
+}
+
+.star {
+    position: absolute;
+    top: -30px; /* Позиция звезды над елкой */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid gold; /* Цвет звезды */
+}
+.star::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid gold; /* Цвет звезды */
+    transform: rotate(72deg);
+}
+.star::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid gold; /* Цвет звезды */
+    transform: rotate(-72deg);
 }
