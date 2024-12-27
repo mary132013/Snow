@@ -20,15 +20,33 @@ body {
 .branch {
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 70px solid green; /* Цвет ветки */
-    margin-bottom: -10px; /* Убираем промежуток между ветками */
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+.layer1 {
+    border-bottom: 80px solid #228B22; /* Цвет ветки */
+}
+
+.layer2 {
+    border-bottom: 70px solid #2E8B57; /* Цвет ветки */
+}
+
+.layer3 {
+    border-bottom: 60px solid #3CB371; /* Цвет ветки */
+}
+
+.layer4 {
+    border-bottom: 50px solid #66CDAA; /* Цвет ветки */
+}
+
+.layer5 {
+    border-bottom: 40px solid #98FB98; /* Цвет ветки */
 }
 
 .trunk {
-    width: 20px;
-    height: 40px;
-    background-color: brown; /* Цвет ствола */
+    width: 30px;
+    height: 50px;
+    background-color: #8B4513; /* Цвет ствола */
     margin: 0 auto; /* Центрируем ствол */
 }
