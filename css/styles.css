@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f8ff;
+    background-color: #f0f8ff; /* Цвет фона */
 }
 
 .tree-container {
@@ -22,6 +22,7 @@ body {
     height: 0;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
+    position: relative; /* Для позиционирования иголок */
 }
 
 .layer1 {
@@ -90,3 +91,30 @@ body {
     border-bottom: 20px solid gold; /* Цвет звезды */
     transform: rotate(-72deg);
 }
+
+/* Стили для иголок */
+.needle {
+    width: 5px; /* Ширина иголки */
+    height: 15px; /* Высота иголки */
+    background-color: #006400; /* Цвет иголки */
+    position: absolute; /* Абсолютное позиционирование для иголок */
+}
+
+.layer1 .needle:nth-child(1) { left: -20px; top: 30px; }
+.layer1 .needle:nth-child(2) { left: 0; top: 30px; }
+.layer1 .needle:nth-child(3) { left: 20px; top: 30px; }
+
+.layer2 .needle:nth-child(1) { left: -25px; top: 20px; }
+.layer2 .needle:nth-child(2) { left: -5px; top: 20px; }
+.layer2 .needle:nth-child(3) { left: 15px; top: 20px; }
+.layer2 .needle:nth-child(4) { left: -15px; top: 20px; }
+
+.layer3 .needle:nth-child(1) { left: -10px; top: 15px; }
+.layer3 .needle:nth-child(2) { left: 10px; top: 15px; }
+
+.layer4 .needle:nth-child(1) { left: -15px; top: 10px; }
+.layer4 .needle:nth-child(2) { left: 5px; top: 10px; }
+.layer4 .needle:nth-child(3) { left: -5px; top: 10px; }
+
+.layer5 .needle:nth-child(1) { left: -5px; top: 5px; }
+
